@@ -1,3 +1,4 @@
+/* General page styling */
 body {
 font-family: Arial, sans-serif;
 margin: 0;
@@ -6,12 +7,14 @@ background-color: #D9D9D9;
 color: #1d1d1d;
 }
 
+/* Main header styling */
 .site-header {
 background-color: #787878;
 color: white;
 box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
+/* Top bar layout with branding and navigation */
 .topbar {
 max-width: 1100px;
 margin: 0 auto;
@@ -23,22 +26,26 @@ gap: 20px;
 flex-wrap: wrap;
 }
 
+/* Website brand title */
 .brand {
 font-size: 2rem;
 font-weight: bold;
 }
 
+/* Short brand subtitle */
 .tagline {
 margin: 6px 0 0;
 opacity: 0.9;
 }
 
+/* Main navigation layout */
 .nav {
 display: flex;
 gap: 18px;
 flex-wrap: wrap;
 }
 
+/* Navigation links styling */
 .nav a {
 color: white;
 text-decoration: none;
@@ -47,11 +54,13 @@ padding-bottom: 4px;
 border-bottom: 2px solid transparent;
 }
 
+/* Navigation hover and active state */
 .nav a:hover,
 .nav a.active {
 border-bottom-color: white;
 }
 
+/* Secondary navigation bar */
 .subnav {
 background-color: #5f5f5f;
 padding: 10px 20px;
@@ -62,12 +71,14 @@ flex-wrap: wrap;
 font-size: 0.9rem;
 }
 
+/* Main content container */
 .container {
 max-width: 1100px;
 margin: 30px auto;
 padding: 0 20px;
 }
 
+/* Hero section styling */
 .hero {
 background: linear-gradient(135deg, #efefef, #ffffff);
 border-radius: 18px;
@@ -80,6 +91,7 @@ box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 margin-bottom: 30px;
 }
 
+/* Small uppercase label in hero section */
 .eyebrow {
 display: inline-block;
 font-size: 0.9rem;
@@ -90,16 +102,19 @@ color: #666;
 margin-bottom: 8px;
 }
 
+/* Hero heading styling */
 .hero h1 {
 margin: 0 0 15px;
 font-size: 2.4rem;
 }
 
+/* Hero paragraph styling */
 .hero p {
 margin: 0 0 20px;
 line-height: 1.6;
 }
 
+/* Featured product card inside hero section */
 .hero-card {
 background-color: #D9D9D9;
 border-radius: 16px;
@@ -108,23 +123,19 @@ box-shadow: inset 0 0 0 2px #bfbfbf;
 text-align: center;
 }
 
+/* Hero card title spacing */
 .hero-card h3 {
 margin-top: 0;
 }
 
-.hero-card span {
-display: block;
-font-size: 1.4rem;
-font-weight: bold;
-margin-top: 10px;
-}
-
+/* Buttons area in hero section */
 .hero-actions {
 display: flex;
 gap: 12px;
 flex-wrap: wrap;
 }
 
+/* Shared styling for main white content blocks */
 .section-block {
 background-color: white;
 padding: 28px;
@@ -133,28 +144,33 @@ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 margin-bottom: 30px;
 }
 
+/* Section headings */
 .section-head h1,
 .section-head h2 {
 margin-top: 0;
 margin-bottom: 10px;
 }
 
+/* Section description text */
 .section-head p {
 margin-top: 0;
 color: #555;
 }
 
+/* Grid layout for cards */
 .card-grid {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 20px;
 }
 
+/* Smaller cards used in category section */
 .small-cards .card {
 padding: 30px 20px;
 font-size: 1.05rem;
 }
 
+/* Generic card styling */
 .card {
 background-color: #D9D9D9;
 border-radius: 20px;
@@ -163,23 +179,27 @@ box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Card hover animation */
 .card:hover {
 transform: translateY(-4px);
 box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
+/* Clickable category cards */
 .clickable {
 cursor: pointer;
 text-align: center;
 font-weight: bold;
 }
 
+/* Product catalog grid */
 .product-grid {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 22px;
 }
 
+/* Individual product card styling */
 .product-card {
 background-color: #D9D9D9;
 border-radius: 18px;
@@ -188,6 +208,7 @@ text-align: center;
 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Placeholder product image box */
 .product-image {
 height: 120px;
 border-radius: 14px;
@@ -201,21 +222,25 @@ font-size: 0.95rem;
 border: 1px solid #c6c6c6;
 }
 
+/* Product price styling */
 .price {
 font-weight: bold;
 font-size: 1.1rem;
 }
 
+/* Contact page two-column layout */
 .contact-layout {
 display: grid;
 grid-template-columns: 1fr 1.1fr;
 gap: 24px;
 }
 
+/* Paragraph spacing in contact info area */
 .contact-info p {
 line-height: 1.6;
 }
 
+/* Store info card and form card styling */
 .info-card,
 .form-card {
 background-color: #D9D9D9;
@@ -224,10 +249,12 @@ padding: 22px;
 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Remove top margin from form heading */
 .form-card h2 {
 margin-top: 0;
 }
 
+/* Form label styling */
 label {
 display: block;
 font-weight: bold;
@@ -235,6 +262,7 @@ margin-bottom: 6px;
 margin-top: 14px;
 }
 
+/* Input and textarea styling */
 input,
 textarea {
 width: 100%;
@@ -245,6 +273,7 @@ box-sizing: border-box;
 font-size: 1rem;
 }
 
+/* Group for form action buttons */
 .form-actions {
 margin-top: 18px;
 display: flex;
@@ -252,6 +281,7 @@ gap: 12px;
 flex-wrap: wrap;
 }
 
+/* Buttons and link-buttons shared styling */
 button,
 input[type="submit"],
 .secondary-btn {
@@ -266,12 +296,14 @@ text-decoration: none;
 display: inline-block;
 }
 
+/* Hover style for buttons */
 button:hover,
 input[type="submit"]:hover,
 .secondary-btn:hover {
 background-color: #5f5f5f;
 }
 
+/* Footer styling */
 .site-footer {
 background-color: #787878;
 color: white;
@@ -280,6 +312,7 @@ padding: 16px;
 margin-top: 30px;
 }
 
+/* Responsive layout for smaller screens */
 @media (max-width: 900px) {
 .hero,
 .contact-layout,
