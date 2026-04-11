@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<!-- Page title -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sportathlix - Catalog</title>
@@ -9,13 +9,15 @@
 </head>
 <body>
 
-<!-- Header section -->
+<!-- Main header -->
 <header class="site-header">
 <div class="topbar">
 <div class="brand-block">
 <div class="brand">Sportathlix</div>
 <p class="tagline">Lifestyle Essentials</p>
 </div>
+
+<!-- Navigation menu -->
 <nav class="nav">
 <a href="index.html">Home</a>
 <a href="catalog.html" class="active">Catalog</a>
@@ -23,7 +25,7 @@
 </nav>
 </div>
 
-<!-- Navigation bar for information-->
+<!-- Navigation panel -->
 <div class="subnav">
 <span>Running</span>
 <span>Training</span>
@@ -35,66 +37,131 @@
 </header>
 
 <main class="container">
-
-<!-- Catalog section -->
 <section class="section-block">
+
+<!-- Top section -->
+<div class="catalog-top">
+
 <div class="section-head">
 <h1>Catalog</h1>
-<p>Browse a simple product listing inspired by your wireframe.</p>
+<p>Browse our products.</p>
 </div>
 
-<div class="product-grid">
-<article class="product-card">
-<div class="product-image">Product Image</div>
-<h3>Olympic Sprint Pro Shoes</h3>
+<!-- Catalog sorting -->
+<div class="sort-box">
+<label>Sort by Price</label>
+<select onchange="sortProducts(this.value)">
+<option value="">Select</option>
+<option value="low">Lowest Price</option>
+<option value="high">Highest Price</option>
+</select>
+</div>
+
+</div>
+
+<!-- Grid container -->
+<div class="product-grid" id="productGrid">
+
+<!-- Catalog items -->
+<div class="product-card" data-price="80">
+<div class="product-image">
+<img src="Pictures/jacket.jpg">
+</div>
+<h3>All-Weather Jacket</h3>
+<p>Lightweight and breathable.</p>
+<p class="price">€80</p>
+<a href="product.html?name=All-Weather Jacket" class="secondary-btn">View Product</a>
+</div>
+
+<div class="product-card" data-price="45">
+<div class="product-image">
+<img src="Pictures/goggles.jpg">
+</div>
+<h3>Professional Sports Goggles</h3>
+<p>Terrain-proof goggles.</p>
+<p class="price">€45</p>
+<a href="product.html?name=Professional Sports Goggles" class="secondary-btn">View Product</a>
+</div>
+
+<div class="product-card" data-price="99">
+<div class="product-image">
+<img src="Pictures/shoes.jpg">
+</div>
+<h3>Athletic Shoes</h3>
+<p>Professional sportswear.</p>
+<p class="price">€99</p>
+<a href="product.html?name=Athletic Shoes" class="secondary-btn">View Product</a>
+</div>
+
+<div class="product-card" data-price="120">
+<div class="product-image">
+<img src="Pictures/skipack.jpg">
+</div>
+<h3>Ski-pack Essential</h3>
+<p>Perfect for winter activities.</p>
 <p class="price">€120</p>
-<button onclick="showProduct('Olympic Sprint Pro Shoes')">View Product</button>
-</article>
+<a href="product.html?name=Ski-pack Essential" class="secondary-btn">View Product</a>
+</div>
 
-<article class="product-card">
-<div class="product-image">Product Image</div>
+<div class="product-card" data-price="25">
+<div class="product-image">
+<img src="Pictures/hat.jpg">
+</div>
+<h3>Weather-proof Hat</h3>
+<p>Protection in all weather.</p>
+<p class="price">€25</p>
+<a href="product.html?name=Weather-proof Hat" class="secondary-btn">View Product</a>
+</div>
+
+<div class="product-card" data-price="150">
+<div class="product-image">
+<img src="Pictures/thermowear.jpg">
+</div>
+<h3>Thermo-isolated Wear</h3>
+<p>Stay warm in extreme cold.</p>
+<p class="price">€150</p>
+<a href="product.html?name=Thermo-isolated Wear" class="secondary-btn">View Product</a>
+</div>
+
+<div class="product-card" data-price="110">
+<div class="product-image">
+<img src="Pictures/olympicshoes.jpg">
+</div>
+<h3>Olympic Sprint Pro Shoes</h3>
+<p>High-speed running performance.</p>
+<p class="price">€110</p>
+<a href="product.html?name=Olympic Sprint Pro Shoes" class="secondary-btn">View Product</a>
+</div>
+
+<div class="product-card" data-price="35">
+<div class="product-image">
+<img src="Pictures/nanogloves.jpg">
+</div>
 <h3>Nano Flex Training Gloves</h3>
+<p>Grip and control for workouts.</p>
 <p class="price">€35</p>
-<button onclick="showProduct('Nano Flex Training Gloves')">View Product</button>
-</article>
+<a href="product.html?name=Nano Flex Training Gloves" class="secondary-btn">View Product</a>
+</div>
 
-<article class="product-card">
-<div class="product-image">Product Image</div>
+<div class="product-card" data-price="45">
+<div class="product-image">
+<img src="Pictures/fitnessmat.jpg">
+</div>
 <h3>Velocity Core Fitness Mat</h3>
-<p class="price">€48</p>
-<button onclick="showProduct('Velocity Core Fitness Mat')">View Product</button>
-</article>
+<p>Comfortable training base.</p>
+<p class="price">€45</p>
+<a href="product.html?name=Velocity Core Fitness Mat" class="secondary-btn">View Product</a>
+</div>
 
-<article class="product-card">
-<div class="product-image">Product Image</div>
-<h3>Active Hydration Bottle</h3>
-<p class="price">€22</p>
-<button onclick="showProduct('Active Hydration Bottle')">View Product</button>
-</article>
-
-<article class="product-card">
-<div class="product-image">Product Image</div>
-<h3>Olympic Motion Backpack</h3>
-<p class="price">€68</p>
-<button onclick="showProduct('Olympic Motion Backpack')">View Product</button>
-</article>
-
-<article class="product-card">
-<div class="product-image">Product Image</div>
-<h3>Power Resistance Bands Set</h3>
-<p class="price">€39</p>
-<button onclick="showProduct('Power Resistance Bands Set')">View Product</button>
-</article>
 </div>
 </section>
 </main>
 
-<!-- Footer section -->
+<!-- Footer -->
 <footer class="site-footer">
 <p>© 2026 Sportathlix</p>
 </footer>
 
-<!-- JavaScript file for interactions -->
 <script src="script.js"></script>
 </body>
 </html>
